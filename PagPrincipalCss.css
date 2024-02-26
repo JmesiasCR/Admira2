@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para el video de presentación */
+.video-presentation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-presentation video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Estilo para el header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #4CAF50;
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgba(51, 51, 51, 0.8); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    transition: margin-right 0.3s ease; /* Transición de posición del logo */
+}
+
+.header-title {
+    font-size: 24px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.8s ease; /* Transición de opacidad */
+}
+
+nav ul {
+    background: linear-gradient(to right, #87CEEB, #ffffff);
+    border: 2px solid #1E90FF;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+nav a {
+    color: #1E90FF;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #1E90FF;
+    color: #ffffff;
+}
+.image-slider {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.image-slider img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.toggle-icon {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
+
+.toggle-icon img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
