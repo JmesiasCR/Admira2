@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admira University</title>
+    <link rel="stylesheet" href="PagPrincipalCss.css">
+    <script src="PagPrincipalJS.js" defer></script>
+</head>
+<body>
+
+    <!-- Video de presentación -->
+    <div class="video-presentation">
+        <video autoplay muted loop id="introVideo" onended="onVideoEnd()">
+            <source src="Archivos/VIDEO/Diseño sin título.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+
+    <div class="content">
+
+        <!-- Encabezado -->
+        <header id="mainHeader" class="hidden">
+            <div class="header-background"></div>
+            <div class="logo">
+                <img src="Archivos/img/Logo_Admira.png" alt="Admira University Logo">
+            </div>
+            <h1 class="header-title">Admira University</h1>
+            <div class="toggle-icon" onclick="toggleNavbar()">
+                <img src="Archivos/icon/icono_Menu.svg" alt="Toggle Navigation">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Tecnología</a></li>
+                    <li><a href="#">Robotica</a></li>
+                    <li><a href="#">Soft Skills</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sección de Bienvenida -->
+        <section class="bienvenida">
+            <h2>Bienvenido a Admira University</h2>
+            <p>Enseñamos inteligencia artificial, tecnología, robótica y soft skills para impulsar tu carrera.</p>
+            <!-- Puedes añadir imágenes aquí -->
+        </section>
+
+        <!-- Sección de Cursos -->
+        <section class="cursos">
+            <h2>Nuestros Cursos</h2>
+            <p>Explora nuestra variedad de cursos diseñados para brindarte conocimientos avanzados.</p>
+            <!-- Puedes añadir imágenes y descripciones de cursos aquí -->
+        </section>
+
+        <!-- Sección de Tecnología -->
+        <section class="tecnologia">
+            <h2>Tecnología</h2>
+            <p>Descubre las últimas tendencias en tecnología a través de nuestros expertos.</p>
+            <!-- Puedes añadir imágenes y contenido relacionado con tecnología aquí -->
+        </section>
+
+        <!-- Sección de Robótica -->
+        <section class="robotica">
+            <h2>Robótica</h2>
+            <p>Sumérgete en el fascinante mundo de la robótica y aprende con nuestros cursos especializados.</p>
+            <!-- Puedes añadir imágenes y contenido relacionado con robótica aquí -->
+        </section>
+
+        <!-- Sección de Soft Skills -->
+        <section class="soft-skills">
+            <h2>Soft Skills</h2>
+            <p>Desarrolla habilidades blandas esenciales para el éxito profesional, como el liderazgo y el trabajo en equipo.</p>
+            <!-- Puedes añadir imágenes y detalles sobre soft skills aquí -->
+        </section>
+        <div class="image-slider">
+            <img src="path/to/image1.jpg" alt="Image 1">
+            <img src="path/to/image2.jpg" alt="Image 2">
+            <img src="path/to/image3.jpg" alt="Image 3">
+            <img src="path/to/image4.jpg" alt="Image 4">
+            <img src="path/to/image5.jpg" alt="Image 5">
+        </div>
+
+        <!-- Sección de Hard Skills -->
+        <section class="hard-skills">
+            <h2>Hard Skills</h2>
+            <div class="skill">
+                <h3>Inteligencia Artificial (IA)</h3>
+                <p>Descripción de cursos de IA...</p>
+            </div>
+            <div class="skill">
+                <h3>Internet of Things (IoT)</h3>
+                <p>Descripción de cursos de IoT...</p>
+            </div>
+            <div class="skill">
+                <h3>Metaverso</h3>
+                <p>Descripción de cursos de Metaverso...</p>
+            </div>
+        </section>
+
+        <!-- Sección de Soft Skills -->
+        <section class="soft-skills">
+            <h2>Soft Skills</h2>
+            <div class="skill">
+                <h3>Liderazgo</h3>
+                <p>Descripción de cursos de Liderazgo...</p>
+            </div>
+            <div class="skill">
+                <h3>Marca Personal</h3>
+                <p>Descripción de cursos de Marca Personal...</p>
+            </div>
+            <div class="skill">
+                <h3>Creatividad</h3>
+                <p>Descripción de cursos de Creatividad...</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Admira University. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <script>
+        // Configuración para mostrar el video de presentación durante 2 segundos
+        var introVideo = document.getElementById('introVideo');
+        var header = document.getElementById('mainHeader');
+
+        introVideo.addEventListener('loadedmetadata', function() {
+            setTimeout(function() {
+                introVideo.style.display = 'none';  // Oculta el video después de 2 segundos
+                header.classList.remove('hidden');  // Muestra el encabezado después de 2 segundos
+                fadeIn(header);  // Aplica la animación de opacidad al encabezado
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>
