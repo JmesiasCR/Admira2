@@ -1,34 +1,10 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #000;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.header {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    position: relative;
-}
-
-.content {
-    max-width: 100%; /* Cambiado a 100% para hacerlo responsivo */
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
-}
-
-.header-video {
-    position: absolute;
+.atropos-container {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -36,57 +12,43 @@ body {
     overflow: hidden;
 }
 
-.header-video video {
-    min-width: 100%;
-    min-height: 100%; /* Añadido para que el video cubra toda la pantalla */
-    object-fit: cover; /* Añadido para cubrir el contenedor manteniendo la relación de aspecto */
-}
-
-.header-overlay {
-    height: 100%;
-    width: 100%;
+/* Estilo para el botón en el centro */
+.atropos .my-atropos .center-button {
     position: absolute;
-    top: 0;
-    background: #000;
-    left: 0;
-    z-index: 1;
-    opacity: 0.50;
-}
-
-.header-content {
-    z-index: 2;
-}
-
-.header-content h1 {
-    font-size: 50px;
-    margin-bottom: 0%;
-    font-family: 'Courier New', Courier, monospace;
-    color: #fff;
-}
-
-.header-content p {
-    font-size: 1.5rem;
-    display: block;
-    padding-bottom: 2rem;
-    color: #fff;
-}
-
-.btn {
-    background: #ffcc00; /* Color de fondo del botón */
-    color: #000;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
     cursor: pointer;
-    transition: background 0.3s ease; /* Transición de color al pasar el ratón */
+    z-index: 30; /* Ajusta según sea necesario */
 }
 
-.btn:hover {
-    background: #e6b800; /* Nuevo color de fondo al pasar el ratón */
+.atropos .my-atropos .center-button:hover {
+    background-color: #2980b9;
 }
 
+.text-over {
+    position: absolute;
+    bottom: 90px;
+    left: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 180%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.text-over-2 {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 180%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 @media (max-width: 960px) {
     .content {

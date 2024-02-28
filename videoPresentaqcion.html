@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoPresentación</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="videoPresentacion.css">
-    <link rel="stylesheet" href="prueba.css">
+    <!-- Incluir Atropos.js -->
+    <link rel="stylesheet" href="atropos.min.css">
 </head>
 <body>
-    <header class="header content">
-        <div class="header-video">
-            <video src="Archivos/VIDEO/Video_Presentacion.mp4" autoplay loop muted> </video>
+    <div class="atropos-container">
+        <!-- Contenedor para la imagen -->
+        <div class="atropos my-atropos">
+            <div class="atropos-scale">
+                <div class="atropos-rotate">
+                    <div class="atropos-inner">
+                        <img src="Archivos/IMG/robotPresentacion.svg" style="width: 100%;" />
+                        <div class="text-over" data-atropos-offset="0" style="color: black;" data-atropos-opacity="0.1;0.8"> ADMIRA </div>
+                        <div class="text-over-2" data-atropos-offset="5" data-atropos-opacity="0.5;1"> UNIVERSITY</div>
+                        <!-- Botón en el centro de la imagen -->
+                        
+                        <button onclick="handleButtonClick()" class="center-button">Haz clic</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="header-overlay"></div>
-        <div class="header-content">
-            <h1>ADMIRA UNIVERSITY</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nemo natus eveniet ullam iste ea enim ut? Id officia repudiandae consectetur dolor ut tenetur error. Atque sed eum ab vitae.</p>
-            <a href="PagPrinicipal.html" class="btn">Admiradores</a>
-        </div>
-    </header>
+    </div>
+
+    <script src="atropos.min.js"></script>
+    <script src="videoPresentacion.js"></script>
 </body>
 </html>
