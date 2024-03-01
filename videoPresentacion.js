@@ -12,8 +12,14 @@ const myAtropos = Atropos({
     activeOffset: 60
   });
   
-  function handleButtonClick() {
-    // Aquí puedes colocar el código que se ejecutará cuando se haga clic en el botón.
-    // Puedes redirigir a PagPrinicipal.html usando window.location.href
-    window.location.href = 'PagPrinicipal.html';
+ function handleButtonClick() {
+  window.location.href = 'PagPrinicipal.html';
 }
+
+document.querySelector('.center-button').addEventListener('mouseenter', function () {
+    document.querySelector('.filtered-image').style.filter = 'grayscale(0%)';
+});
+
+document.querySelector('.center-button').addEventListener('mouseleave', function () {
+    document.querySelector('.filtered-image').style.filter = 'grayscale(100%)';
+});
