@@ -27,6 +27,12 @@ body {
     font-weight: bold;
     font-size: 180%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: scrolling 0.1s linear infinite;
+}
+@keyframes scrolling {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+    
 }
 
 .text-over-2 {
@@ -90,7 +96,7 @@ body {
 
 /* animaciones y efectos a partir del boton*/
 
-.center-button:hover + .text-over-2{
+.center-button:hover ~ .atropos-container.text-over-2{
     color: rgb(255, 255, 255);
     padding: 50px 50px;
     display: block;
@@ -101,6 +107,9 @@ body {
 .center-button:hover ~ .atropos-inner .filtered-image {
     filter: grayscale(0%);
     transition: all 0.3s ease; /* Ajusta según sea necesario */
+}
+.center-button:hover ~ .atropos-inner .text-over{
+    animation-play-state: paused;
 }
 
 
