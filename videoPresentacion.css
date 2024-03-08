@@ -8,6 +8,7 @@ body {
     width:100%;
     min-height:20em;
     float:left;
+    left: 2%;
     position:relative;
     overflow:hidden;
 }
@@ -27,11 +28,11 @@ body {
     font-weight: bold;
     font-size: 180%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    animation: scrolling 0.1s linear infinite;
+    animation: scrolling 10s linear infinite;
 }
 @keyframes scrolling {
-    0%{transform: translateX(100%);}
-    100%{transform: translateX(-100%);}
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(100%);}
     
 }
 
@@ -68,6 +69,8 @@ body {
 }
 /*Empezarcon la imagen del robot en gris*/
 .filtered-image {
+    max-width: 100%;
+    height: auto;
     filter: grayscale(100%); /* Inicia en blanco y negro */
     transition: all 0.3; /* Transición suave de 0.5 segundos */
 }
@@ -109,17 +112,24 @@ body {
     transition: all 0.3s ease; /* Ajusta según sea necesario */
 }
 .center-button:hover ~ .atropos-inner .text-over{
-    animation-play-state: paused;
+    opacity: 0;
 }
-
-
-
-
-
-
 
 @media (max-width: 960px) {
-    .content {
-        padding: 0 3;
+    .atropos-inner, .image-robot, .textos {
+        width: 100%; /* Hacer que estos elementos ocupen todo el ancho disponible */
+    }
+
+    .text-over {
+        font-size: 5vw; /* Hacer el tamaño de fuente más adaptable */
+        padding: 20px 20px; /* Ajustar el padding para pantallas más pequeñas */
+        left: 10px; /* Ajustar la posición para evitar que se corte */
+    }
+
+    .center-button {
+        width: 50%; /* Hacer el botón más adaptable al tamaño de la pantalla */
+        font-size: 4vw; /* Ajustar el tamaño de fuente del botón */
+        padding: 15px 10px; /* Ajustar el padding del botón */
     }
 }
+

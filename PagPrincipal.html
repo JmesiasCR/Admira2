@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admira University</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="PagPrincipalCss.css">
+    <!-- jQuery para funcionalidades generales y Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Scripts necesarios para funcionalidades de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Fondo de video -->
+    <div class="video-background">
+        <!-- Elemento video con autoplay, loop, muted y playsinline para compatibilidad móvil -->
+        <video autoplay loop muted playsinline>
+            <!-- Ruta al archivo de video -->
+            <source src="Archivos/VIDEO/Video_Presentacion.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- Encabezado principal de la página -->
+    <div class="header-main">
+        <header class="d-flex justify-content-between align-items-center">
+            <div class="navbar-icon">
+                <!-- Icono para abrir el menú lateral, desencadena openNav() -->
+                <i class="fas fa-bars" onclick="openNav()"></i>
+            </div>
+            <h1 class="header-title">Admira University</h1>
+            <div class="logo">
+                <!-- Ruta al logo de la página -->
+                <img src="Archivos/IMG/logoSVG.svg" alt="Logo">
+            </div>
+        </header>
+    </div>
+    <!-- Menú lateral para navegación -->
+    <div id="mySidenav" class="side-navbar">
+        <!-- Botón para cerrar el menú lateral, desencadena closeNav() -->
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <!-- Enlaces del menú lateral -->
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#cursos">Cursos y Programas</a>
+        <a href="#admisiones">Admisiones</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#blog">Blog o Recursos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#eventos">Eventos y Talleres</a>
+        <a href="#acceso">Acceso/Portal Estudiantil</a>
+    </div>
+    <!-- Contenido principal de la página -->
+    <div class="content">
+        <!-- Secciones de contenido aquí -->
+        <div id="inicio">
+            <h2>Inicio</h2>
+            <!-- Contenido de Inicio aquí -->
+        </div>
+        <div id="nosotros">
+            <h2>Nosotros</h2>
+            <!-- Contenido de Nosotros aquí -->
+        </div>
+        <div id="cursos">
+            <h2>Cursos y Programas</h2>
+            <div id="hard-skills">
+                <h3>Hard Skills</h3>
+                <!-- Contenido de Hard Skills aquí -->
+            </div>
+            <div id="soft-skills">
+                <h3>Soft Skills</h3>
+                <!-- Contenido de Soft Skills aquí -->
+            </div>
+        </div>
+        <div id="admisiones">
+            <h2>Admisiones</h2>
+            <!-- Contenido de Admisiones aquí -->
+        </div>
+        <div id="testimonios">
+            <h2>Testimonios</h2>
+            <!-- Contenido de Testimonios aquí -->
+        </div>
+        <div id="blog">
+            <h2>Blog o Recursos</h2>
+            <!-- Contenido de Blog o Recursos aquí -->
+        </div>
+        <div id="contacto">
+            <h2>Contacto</h2>
+            <!-- Contenido de Contacto aquí -->
+        </div>
+        <div id="faqs">
+            <h2>FAQs</h2>
+            <!-- Contenido de FAQs aquí -->
+        </div>
+        <div id="eventos">
+            <h2>Eventos y Talleres</h2>
+            <!-- Contenido de Eventos y Talleres aquí -->
+        </div>
+        <div id="acceso">
+            <h2>Acceso/Portal Estudiantil</h2>
+            <!-- Contenido de Acceso/Portal Estudiantil aquí -->
+        </div>
+    </div>
+    <!-- Pie de página -->
+    <footer>...</footer>
+    <!-- Script de FontAwesome para íconos -->
+    <script src="https://kit.fontawesome.com/e2ed42d7ff.js" crossorigin="anonymous"></script>
+    <!-- Archivo JavaScript principal de la página -->
+    <script src="PagPrincipalJS.js"></script>
+</body>
+</html>
