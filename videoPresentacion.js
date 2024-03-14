@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Inicialización de Atropos
     const myAtropos = Atropos({
         el: '.my-atropos',
         rotateLock: true,
         rotateXMax: 15,
         rotateYMax: 15,
-        shadow: true,
+        shadow: false,
         shadowOffset: 30,
-        shadowScale: 0.8,
+        //shadowScale: 0.8,
         highlight: false,
         durationEnter: 600,
         activeOffset: 60
@@ -33,9 +32,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    // Función para manejar el clic en el botón y redirigir
-    function handleButtonClick() {
-        window.location.href = 'PagPrincipal.html';
+    // Asegúrate de que esta función esté accesible globalmente si se usa en el HTML
+    window.handleButtonClick = function() {
+        window.location.href = 'PagPrincipal.html'; // Modifica según la URL de destino
     }
     button.addEventListener('click', handleButtonClick); // Asegura la correcta asignación del evento de clic
 });

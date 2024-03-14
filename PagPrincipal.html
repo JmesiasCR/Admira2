@@ -17,9 +17,7 @@
 <body>
     <!-- Fondo de video -->
     <div class="video-background">
-        <!-- Elemento video con autoplay, loop, muted y playsinline para compatibilidad móvil -->
         <video autoplay loop muted playsinline>
-            <!-- Ruta al archivo de video -->
             <source src="Archivos/VIDEO/Video_Presentacion.mp4" type="video/mp4">
         </video>
     </div>
@@ -27,21 +25,17 @@
     <div class="header-main">
         <header class="d-flex justify-content-between align-items-center">
             <div class="navbar-icon">
-                <!-- Icono para abrir el menú lateral, desencadena openNav() -->
                 <i class="fas fa-bars" onclick="openNav()"></i>
             </div>
             <h1 class="header-title">Admira University</h1>
             <div class="logo">
-                <!-- Ruta al logo de la página -->
                 <img src="Archivos/IMG/logoSVG.svg" alt="Logo">
             </div>
         </header>
     </div>
     <!-- Menú lateral para navegación -->
     <div id="mySidenav" class="side-navbar">
-        <!-- Botón para cerrar el menú lateral, desencadena closeNav() -->
         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
-        <!-- Enlaces del menú lateral -->
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#cursos">Cursos y Programas</a>
@@ -58,54 +52,90 @@
         <!-- Secciones de contenido aquí -->
         <div id="inicio">
             <h2>Inicio</h2>
-            <!-- Contenido de Inicio aquí -->
         </div>
         <div id="nosotros">
             <h2>Nosotros</h2>
-            <!-- Contenido de Nosotros aquí -->
         </div>
         <div id="cursos">
             <h2>Cursos y Programas</h2>
             <div id="hard-skills">
                 <h3>Hard Skills</h3>
-                <!-- Contenido de Hard Skills aquí -->
             </div>
             <div id="soft-skills">
                 <h3>Soft Skills</h3>
-                <!-- Contenido de Soft Skills aquí -->
             </div>
         </div>
         <div id="admisiones">
             <h2>Admisiones</h2>
-            <!-- Contenido de Admisiones aquí -->
         </div>
         <div id="testimonios">
             <h2>Testimonios</h2>
-            <!-- Contenido de Testimonios aquí -->
         </div>
         <div id="blog">
             <h2>Blog o Recursos</h2>
-            <!-- Contenido de Blog o Recursos aquí -->
         </div>
         <div id="contacto">
             <h2>Contacto</h2>
-            <!-- Contenido de Contacto aquí -->
         </div>
         <div id="faqs">
             <h2>FAQs</h2>
-            <!-- Contenido de FAQs aquí -->
         </div>
         <div id="eventos">
             <h2>Eventos y Talleres</h2>
-            <!-- Contenido de Eventos y Talleres aquí -->
         </div>
         <div id="acceso">
             <h2>Acceso/Portal Estudiantil</h2>
-            <!-- Contenido de Acceso/Portal Estudiantil aquí -->
+        </div>
+        <!-- Nuevos elementos añadidos -->
+        <!-- Video adicional -->
+        <div class="additional-video">
+            <video controls>
+                <source src="ruta/a/tu/video_adicional.mp4" type="video/mp4">
+                Tu navegador no admite el elemento <code>video</code>.
+            </video>
+        </div>
+        <!-- Sección de imágenes con texto a pie de foto -->
+        <div class="image-text-section">
+            <figure>
+                <img src="ruta/a/imagen1.jpg" alt="Descripción imagen 1">
+                <figcaption>Texto a pie de foto imagen 1</figcaption>
+            </figure>
+            <figure>
+                <img src="ruta/a/imagen2.jpg" alt="Descripción imagen 2">
+                <figcaption>Texto a pie de foto imagen 2</figcaption>
+            </figure>
+            <figure>
+                <img src="ruta/a/imagen3.jpg" alt="Descripción imagen 3">
+                <figcaption>Texto a pie de foto imagen 3</figcaption>
+            </figure>
+        </div>
+        <!-- Cuadro de texto para presentar la idea de un proyecto -->
+        <div class="project-idea">
+            <h2>Título del Proyecto</h2>
+            <p>Descripción detallada del proyecto.</p>
+        </div>
+        <!-- Galería de 4 imágenes -->
+        <div class="image-gallery">
+            <img src="ruta/a/imagen4.jpg" alt="Descripción imagen 4">
+            <img src="ruta/a/imagen5.jpg" alt="Descripción imagen 5">
+            <img src="ruta/a/imagen6.jpg" alt="Descripción imagen 6">
+            <img src="ruta/a/imagen7.jpg" alt="Descripción imagen 7">
+        </div>
+        <!-- Mapa con direcciones -->
+        <div class="map-section">
+            <h2>Encuéntranos</h2>
+            <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- Sección de colaboraciones -->
+        <div class="collaborations-section">
+            <h2>Colaboraciones</h2>
+            <p>Información sobre entidades o individuos con los que colabora la institución.</p>
         </div>
     </div>
     <!-- Pie de página -->
-    <footer>...</footer>
+    <footer>
+        <p>© 2024 Admira University. Todos los derechos reservados.</p>
+    </footer>
     <!-- Script de FontAwesome para íconos -->
     <script src="https://kit.fontawesome.com/e2ed42d7ff.js" crossorigin="anonymous"></script>
     <!-- Archivo JavaScript principal de la página -->

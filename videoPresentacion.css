@@ -1,34 +1,45 @@
 body {
     margin: 0;
-    overflow: hidden;
-    background-color: black;
+    overflow-x: hidden;
+    background-image: url('Archivos/IMG/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
 }
 
 .atropos-container {
-    width:100%;
-    min-height:20em;
-    float:left;
-    left: 2%;
-    position:relative;
-    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    
+
 }
-.atropos-inner{
-    width:30%;
-    position:absolute;
-    top:0;
-    bottom:0;
-}
+
+.atropos-inner {
+  
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}   
 /*estilo para los textos*/
 .text-over {
-    padding: 30px 30px;
+    padding: 15px;
     position: absolute;
     bottom: 90px;
     left: 30px;
     color: white;
     font-weight: bold;
-    font-size: 180%;
+    font-size: 1.5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     animation: scrolling 10s linear infinite;
+    width: 100%;
 }
 @keyframes scrolling {
     0%{transform: translateY(-100%);}
@@ -58,18 +69,23 @@ body {
     top: 50%;
     left: 48%;
     transform: translate(-50%, -50%);
-    padding: 18px 20px;
+    padding: 10px 20px;
     border-radius: 30%;
     background-color: #ffffff;
     color: rgba(8, 110, 243, 0.575);
     border:rgb(255, 255, 255) 3px;
     cursor: pointer;
     z-index: 1; /* Ajusta según sea necesario */
-    font-size: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    padding: 15px 30px;
+    margin: 20px ;
+
 }
 /*Empezarcon la imagen del robot en gris*/
 .filtered-image {
     max-width: 100%;
+    width: 100%;
     height: auto;
     filter: grayscale(100%); /* Inicia en blanco y negro */
     transition: all 0.3; /* Transición suave de 0.5 segundos */
@@ -115,21 +131,15 @@ body {
     opacity: 0;
 }
 
-@media (max-width: 960px) {
-    .atropos-inner, .image-robot, .textos {
-        width: 100%; /* Hacer que estos elementos ocupen todo el ancho disponible */
-    }
-
+@media (max-width: 768px) {
     .text-over {
-        font-size: 5vw; /* Hacer el tamaño de fuente más adaptable */
-        padding: 20px 20px; /* Ajustar el padding para pantallas más pequeñas */
-        left: 10px; /* Ajustar la posición para evitar que se corte */
+        font-size: 1rem; /* Tamaño de texto más pequeño para dispositivos móviles */
     }
-
     .center-button {
-        width: 50%; /* Hacer el botón más adaptable al tamaño de la pantalla */
-        font-size: 4vw; /* Ajustar el tamaño de fuente del botón */
-        padding: 15px 10px; /* Ajustar el padding del botón */
+        width: auto; /* Permitir que el botón ajuste su ancho */
+        padding: 10px 20px; /* Padding más pequeño para pantallas pequeñas */
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño para móviles */
     }
 }
+
 
